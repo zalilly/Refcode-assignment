@@ -1,6 +1,11 @@
 body { 
 background: linear-gradient(to bottom, #33CCFF 0%, #FF99CC 100%);
-text-align: center;
+/* text-align: center; */
 }
 h1 { color: navy; margin-left: 20px; }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
