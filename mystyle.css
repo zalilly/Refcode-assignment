@@ -73,7 +73,7 @@ a:hover {
 } */
 
 .slide-left{
-  animation: slide 1s linear forwards;
+  animation: slide 2s linear forwards;
 }
 @keyframes slide{
   0%{
@@ -90,9 +90,9 @@ a:hover {
   background-position: 2000px 0 ;
  }
 }
- /* h1.slide-left{
-  animation-delay: 2s;
-} */
+ h1.slide-left{
+  animation-delay: 1s;
+} 
  h3.slide-left{
   animation-delay: .5;
 }

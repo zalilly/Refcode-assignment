@@ -96,12 +96,24 @@ font-weight: 500;
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
     }
-    </style>
+    @media screen and (max-width: 770px) {
+      .row{
+        width: 95%;
+      }
+      .col{
+        flex-basis: 50%; 
+        font-size: 14px;
+      }
+    }
+      
+    </style> 
+    
+    
     
 </head>
 <!-- <body>
 
-        <!-- <header-->
+        <!- <header -->
         
            <div id="navbar"></div>
           <a href="#default" id="logo"><img
@@ -205,21 +217,21 @@ font-weight: 500;
    
 
             <!-- resume section-->
-    <section id="resume">
+    <section id="resume" style="background-image:url(images/Italy2.jpeg) ;">
         <div class="container">
             <h1 class="text-center">Resume</h1>
             <div class="container col-l-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                   <div class="col-10 col-sm-8 col-lg-6">                   
         <iframe  height="500" width="600"
-            src="sosina-fetur-resume.pdf"></iframe>
+            src="coming soon"></iframe>
               </div>
             </div>
         </div>
     </section>
     
     <!-- <section id="links"> -->
-<section id="links">
+<section id="links" style="background-color: bisque;">
     <h1 class="text-center">Classmate Links</h1>
    <div class="row">
     <div class="col"> 
@@ -360,7 +372,7 @@ font-weight: 500;
       
 
     <!-- contact section-->
-    <section id="contact">
+    <section id="contact" style="background-color:black ;">
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Drop me a message:</h1>
                 <div class="justify-content-center col-lg-8">
