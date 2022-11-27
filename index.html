@@ -3,380 +3,203 @@
     
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css"> 
     <title>Bonjour</title>
 
-   
-    <style>
-    /* body {
-      font-family: "Lato", sans-serif;
-    } */
-    
-    Place text in the middle of the image
-/* .hero-text {
-  text-align: center;
-  position: absolute;
-  top:  60%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  color: white; 
-}  */
-.text-box{
-    color: #fff;
-    position: absolute;
-    bottom: 8%;
-}
-.text-box p{
-    font-size: 50px;
-    font-weight: 600;
-}
-  .text-box h1{
-font-size: 130px;
-line-height: 160px;
-margin-left: -10px;
-color: transparent;
--webkit-text-stroke: 1px #fff;
-background: url(images/logo1\ Small.jpeg);
--webkit-background-clip: text;
- background-position: 0,0; 
- animation:back 20s linear infinite;
-
-}      
-  .text-box h3{
-font-size: 40px;
-font-weight: 500;
-  }      
-    
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: rgb(141, 134, 218);
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-    
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #432f44;
-      display: block;
-      transition: 0.3s;
-    }
-    
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-    
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-    
-    #main {
-      transition: margin-right .1s;
-      padding: 12px;
-      
-    }
-    
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-    @media screen and (max-width: 770px) {
-      .row{
-        width: 95%;
-      }
-      .col{
-        flex-basis: 50%; 
-        font-size: 14px;
-      }
-    }
-      
-    </style> 
-    
-    
-    
 </head>
-<!-- <body>
-
-        <!- <header -->
-        
-           <div id="navbar"></div>
-          <a href="#default" id="logo"><img
-            src="images/logo1 Small.jpeg"
-            class="m-5 rounded-circle"
-            height="150"
-            alt="logo"
-            loading="lazy"
-          /> 
-          </a>
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <li class="nav-item">
-                <a class="nav-link active"  aria-current="page" href="#main">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#my-story">My story</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                   <li class="nav-item"><a class="nav-link" href="#links">Classmate Links</a></li>
-                   
-                   
-                <li class="nav-item dropdown"> 
-                  <a class="nav-link dropdown-toggle" href="#links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Links
-                  </a>
-                  <ul class="dropdown-menu">
-                   <!-- <li><a class="dropdown-item" href="#resume">Resume</a></li>
-                   <li><a class="dropdown-item" href="#links">Classmate Links</a></li>
-                   <li><a class="dropdown-item" href="#contact">Contact</a></li> 
-                   <li><a class="dropdown-item" href="#links">Links</a></li> -->
-                    <li> <a class="dropdown-item" href="http://nateamelo.com/">Nate Amelo</a></li>
-                        <li>  <a class="dropdown-item" href="http://github.com/sagekgray">Sage Gray</a></li>
-                            <li> <a class="dropdown-item" href="https://github.com/freshta2001">Freshta mohammadi</a></li>
-                                <li><a class="dropdown-item" href="https://github.com/GraceU1/Myfirst-Repository">Grace U</a></li>
-                                    <li><a class="dropdown-item" href="https://github.com/YvetteI/My-developer-story-">Yvette I</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> 
-          </div>
-
-        
-          
-          <div id="main">
-
-          
-            <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-          
-        
-          <script>
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-          }
-          
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-          }
-          </script>
-
-
-       
-    <!-- Main Section
-    <section id="main">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="images/Sosina-Fetur_headshot.jpeg" class="d-block mx-lg-auto img-fluid slide-left" alt="A headshot photo of Sosina" width="700" height="500" loading="lazy" >
-              </div> -->
-              <section id="main"></section>
-                <div class="text-box">
-                    <p class="slide-left">I'M</p>
-                     <h1 class="slide-left">SOSINA (LILY) FETUR.</h1>
-                      <h3 class="slide-left">From hebrew Shoshana (Sosina) meaning "lily flower"</h3>
-                        <h3 class="slide-left">And I'm a Mother, creative, love adventure and love to code.</h3>
-                </div>
-                </div>          
-              </div>
-            </div>
+  
+<body>
+      <div class="header">
+        <nav id="navbar">
+            <img src="images/logo1 Small.jpeg" class="logo">
+            <ul id="menu">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#my-story">About</a></li>
+               <li><a href="#my-story">Resume</a></li>
+               <li><a href="#links">Classmate-Links</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+       </nav>     
+       <section id="home">
+       <div class="header-text">              
+           <h1 class="slide-left">I'M<br> SOSINA (LILY)<br> FETUR.</h1>
+           <!-- <h3 class="slide-left">From hebrew Shoshana (Sosina) meaning "lily flower"</h3> -->
+           <h3 class="slide-left">I'm a Mother, creative <BR> Ambitious Developer.</h3>
         </div>
-    </section>
+    </div>
+  
+    <!-- </section>
+               <---myStory--->
+   <div id="my-story">
+       <div class="container">
+           <div class="rows">
+               <div class="my-story-col-1">
+                  <img src="/images/Sosina-Fetur_headshot.jpeg">
+               </div>
+               <div class="my-story-col-2">
+                   <h1 class="sub-title">About Me</h1> 
+                   <p>First time i got introduce to using a computer was in highschool. 
 
-    <!-- My Developer Story Section -->
-    <section id="my-story">
-        <div class="container col-lg-8 px-4 py-5">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <iframe  width="480" height="500" 
-                src="https://www.youtube.com/embed/TPLTl7hZdq4">
-                </iframe>
-              </div>
-              <div class="col-8">
-                <h1 class="display-2 fw-bold lh-1 mb-3">My Story</h1>
-                <p class="lead">First time i got introduce to using a computer was in highschool. I learned basic computer skills including using email, data entry, and web searching. Also, I used to love playing games on the computer besides learning how the operating system works. In Addition to my interest and a demand in the workplace, I see how computers play a big role in our society. I've always had a passion for using technology to solve problems and improve lives. Joining Refcode will teach me to develope a new skill and open up better work opportunities.</p>
-              </div>
-            </div>
+                    I learned basic computer skills including using email, data entry, and web searching. 
+
+                    Also, I used to love playing games on the computer besides learning how the operating system works. 
+
+                    In Addition to my interest and a demand in the workplace, I see how computers play a big role in our society. 
+
+                    I've always had a passion for using technology to solve problems and improve lives. 
+                    
+                    Joining Refcode will teach me to develope a new skill and open up better work opportunities.<BR>
+                    My Mantra "My positive thoughts guide me to new heights." <img src="/images/logo.png">
+                </p>
+               
+          <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-    </section>
+          <div class="tab-contents active-tab" id="skills">
+              <ul>
+              <li><span>MY SKILLS</span><br>Languages</li>
+                HTML
+                85.4%
+                 
+                CSS
+                11.5%
+                 
+                JavaScript
+                3.1%</li>  
+          </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+              <ul>
+              <li><span>EXPERIENCE</span><br>Website Design</li>
+              <p class="mt-4">Working on a Website taught me problem solving, project management, Collaboration. 
+                I learned design in general is all about finding the right balance between form and function. </p>
+          </ul>
+          </div>  
+          <div class="tab-contents" id="education">
+            <ul>
+            <li><span>EDUCATION</span><br>Introduction to Professional Web Development</li>
 
-   
-
-            <!-- resume section-->
-    <section id="resume" style="background-image:url(images/Italy2.jpeg) ;">
-        <div class="container">
-            <h1 class="text-center">Resume</h1>
+            <span class="date"><h1>September 2022 – Present</h1></span>
+    			<span class="position">Refcode </span>
+    			<p class="mt-4">Participating in a 10-week Professional Web Development program spending 20+ hours leaning HTML, CSS, JavaScript, GitHub/Git, Command Line Terminal, Agile/SCRUM Methodologies, Kanban Boards and Continuous Deployment. </p>
+    			</div>
+           </ul>
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>      
+             
+    <!-- <!<section id="resume" style="background-image:url(images/Italy2.jpeg) --
+        <div class="container"></div>
+             <h1 class="text-center">Resume</h1>
             <div class="container col-l-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                  <div class="col-10 col-sm-8 col-lg-6">                   
-        <iframe  height="500" width="600"
-            src="coming soon"></iframe>
-              </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- <section id="links"> -->
-<section id="links" style="background-color: bisque;">
+                  <div class="col-10 col-sm-8 col-lg-6">                    
+         <iframe  height="300" width="500"
+             src="coming soon"></iframe>
+             </div> 
+           </div>
+         </div> 
+    </section> -->  
+
+    <!--Classmate-links-->
+    <section id="links">
     <h1 class="text-center">Classmate Links</h1>
    <div class="row">
     <div class="col"> 
-        <span></span>
-        <img src="images/damian.png">
-         </div>
+    <span></span>
+     <img src="images/Samri-Ejig.jpeg">
+    </div>
     <div class="col"> 
-    <h3>Damian Baker</h3>
-    <p>Hello</p>
+     <h3>Samri Debebe</h3>
+    
+     <li> <a href="https://samridebebe.com"class="btn btn-success">https://samridebebe.com</a></li>
    </div> 
+
    <div class="col">
     <span></span>
-    <img src="images/elizabeth.jpeg">
+     <img src="images/elizabeth.jpeg">
+    </div>   
+    <div class="col">
+     <h3>Elizabeth Bekele</h3> 
+     <li> <a href="http://elizabethbekele.com"class="btn btn-success">http://elizabethbekele.com</a></li>
+    </div>
+   
+    <div class="col">
+     <h3>Ayah Hamdoun</h3> 
+     <li> <a href="http://ayahhamdoun.github.io/My-Developer-story"class="btn btn-success">https://ayahhamdoun.github.io/My-Developer-story</a></li>
     </div>
     <div class="col">
-    <h3>Elizabeth Bekele</h3>
-    <p>Hello</p>
+    <span class="arrow"></span>
+     <img src="images/ayah.jpeg">
     </div>
-   
-        <div class="col">
-        <h3>Ayah Hamdoun</h3>
-        <p>Hello</p>
-        </div>
-         <div class="col">
-        <span class="arrow"></span>
-        <img src="images/ayah.jpeg">
-        </div>
-        <div class="col">
-            <h3>Lu Vazquez</h3>
-            <p>Hello</p>
-           </div>
-        <div class="col">
-            <span class="arrow"></span>
-            <img src="images/LU_profile.jpeg">
-             </div>
+
+    <div class="col">
+     <h3>Bia Gillies</h3>
+     <li> <a href="http:/biagillies/.com"class="btn btn-success">https://biagillies.com</a></li>
+    </div>
+    <div class="col">
+    <span class="arrow"></span>
+     <img src="images/IMG_0019.jpg">
+    </div>
+
+    <div class="row">
+    <div class="col"> 
+    <span></span>
+     <img src="images/damian.png">
+    </div>
+    <div class="col"> 
+     <h3>Damian Baker</h3>
+     <li> <a href="http://damianbaker.org"class="btn btn-success">https://damianbaker.org</a></li>
+    </div> 
+
+    <div class="col">
+    <span></span>
+     <img src="images/nate_amelo (1).png">
+    </div>
+    <div class="col">
+     <h3>Nate Amelo</h3>
+     <li> <a href="http://nateamelo.com" class="btn btn-success">https://nateamelo.com</a></li>
+    </div>
+
+    <div class="col">
+     <h3>Mohamud Amin</h3>
+     <li> <a href="http://mohamudamin.com" class="btn btn-success">https://www.mohamudamin.com</a></li>
+    </div>
+    <div class="col">
+    <span class="arrow"></span>
+     <img src="images/amin1263.jpeg">
+    </div>
+
+    <div class="col">
+     <h3>Lu Vazquez</h3>
+     <li> <a href="http://luvazquez.com" class="btn btn-success">https://www.luvazquez.com</a></li>
+    </div>
+    <div class="col">
+    <span class="arrow"></span>
+     <img src="images/LU_profile.jpeg">
+    </div>
              
-</div>
- </section>
-
-
-
-
+   </div> 
+   </div>
+  </section>
     
-<!--     
-    <section id="links">
-        <div class="container mt-3">
-            <h1 class="text-center">Classmate Links</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        
-                        <img class="card-img-top" src="/images/ayah.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Ayah Hamdoun</h4>
-                            <p class="card-text"> Ayah is a digital creator and brand ambassador.</p>
-                            <div class="text-center">
-                                <a href="https://ayahhamdoun.github.io/ " target="_blank" class="btn btn-success">https://ayahhamdoun.github.io/ </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        <img class="card-img-top" src="/images/elizabeth.jpeg" alt="Card image" style="width: 100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Elizabeth Bekele</h4>
-                            <p class="card-text">Elizabeth is candid in her journey before Refcode.</p>
-                            <div class="text-center">
-                                <a href="https//elizabethbekele.com/mystory.html" target="_blank" class="btn btn-success"> https://elizabethbekele.com/ </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        <img class="card-img-top" src="/images/damian.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Damian Baker</h4>
-                            <p class="card-text">Damian has many interests that he has combined for an visually artistic work of art.</p>
-                            <div class="text-center">
-                                <a href="http://damianbaker.org/" target="_blank" class="btn btn-success"> http://damianbaker.org/ </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        <img class="card-img-top" src="/images/LU_profile.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lu Vazquez</h4>
-                            <p class="card-text">Lu is an artist and showcases her work in a visually beautiful page.</p>
-                            <div class="text-center">
-                                <a href="https://www.luvazquez.com/" class="btn btn-success" target="_blank"> https://www.luvazquez.com/ </a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        <img class="card-img-top" src="/images/Samri-Ejig.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Samrawit Debebe.</h4>
-                            <p class="card-text">Recieving praise from her website, Grace has created a professional website that is a masterpiece.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">insert when live</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="$card-height: 100%">
-                        <img class="card-img-top" src="/images/amin1263.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Mohamud Amin</h4>
-                            <p class="card-text"> Mohamud has put alot of work in the process of his website.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">insert when live</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            
-
     <!-- </section> -->
-   
-
-    <!-- Slide Show -->
-    
-      
-
-    <!-- contact section-->
+    <contact section> 
     <section id="contact" style="background-color:black ;">
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Drop me a message:</h1>
                 <div class="justify-content-center col-lg-8">
-                    <!-- form fields -->
+                    
                     <form>
                         <input type="text" class="form-control form-control-lg" placeholder="Name">
                         <input type="email" class="form-control mt-3" placeholder="Email">
@@ -384,43 +207,59 @@ font-weight: 500;
                         <div class="mb-3 mt-4">
                             <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Things I wish to chat about..."></textarea>
                         </div>
+                
+                    <a href="mailto:sosif83@gmail.com" ><button type="button" class="btn btn-success mt-3">Contact Me</button> </a>
+                    <!-- <a href="mailto:sosif83@gmail.com/" class= "btn-success btn  stretched-link">Contact me</a>  -->
                     </form>
-                    <!-- <a href="https://www.linkedin.com/in/sosina-lily-fetur-2b1561252/" class= "btn-success btn  stretched-link">Contact me</a> -->
-                    <!-- <button type="button" class="btn btn-success mt-3">Contact Me</button> -->
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-
+        </div> 
 <footer>
     <div class="card-body">
         <h5 class="card-title">Visit My Github </h5> 
-        
-        <!-- Add icon library -->
 
-
-
-<!-- Add font awesome icons -->
-<a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa fa-linkedin"></i>
-</a>
-<a href="#" class="fa fa-pinterest"></a>
-<a href="https://github.com/zallily/Refcode-assignment" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa fa-github"></i>
-</a>
-
-
+    <div class="container">
+        <div class="ion-icon">   
+         <a href="https://github.com/zallily" target="_blank">
+            <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
+         </a>
+         <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>   
+        </a>
+        </div>
+    </div>   
+    
 <p>&copy2022 SosinaFetur| All rights reserved</p>
+    
+<script>
+  
+  var navbar = document.getElementById("navbar");
+  var menu = document.getElementById("menu");
+  
+  window.onscroll = function(){
+    if(window.pageYOffset >= menu.offsetTop){
+      navbar.classList.add("sticky");
+    }
+    else{
+      navbar.classList.remove("sticky");
+    }
+  }
 
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
 
-
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+  </script> 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
